@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Poppins";
-  background: linear-gradient(rgba(27, 6, 6, 0.9), rgba(27, 6, 6, 0.9)),
+  background: linear-gradient(rgba(20, 7, 2, 0.9), rgba(20, 7, 2, 0.9)),
     url("../Resources/Rooms & rates/room_6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,12 +14,10 @@ body {
 
 .wrapper {
   max-width: 100%;
-  width: 1320px;
-  padding: 30px;
+  width: 100%;
+  padding: 10px;
   margin: 0 auto;
-}
-img {
-  /* max-width: 100%; */
+  margin-bottom: 50px;
 }
 
 nav {
@@ -31,12 +29,14 @@ nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 nav ul li {
   list-style: none;
   margin-left: 30px;
 }
 nav ul li a {
+  font-size: 16px;
   text-decoration: none;
   color: #fff;
 }
@@ -67,7 +67,15 @@ nav ul li a {
   margin-top: -50px;
 }
 
-@media only screen and (max-width: 800px) {
+header ul a:hover {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 750px) {
   div.fac-div {
     flex-wrap: wrap-reverse !important;
     justify-content: center;
@@ -79,7 +87,7 @@ nav ul li a {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 37px;
     letter-spacing: 0.02em;
   }
@@ -87,6 +95,7 @@ nav ul li a {
     text-align: center;
     line-height: 3rem;
   }
+
   .footer-v2 {
     margin-top: -50px;
   }
